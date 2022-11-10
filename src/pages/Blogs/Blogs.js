@@ -2,7 +2,7 @@ import React from "react";
 
 const Blog = () => {
   return (
-    <div>
+    <div className="text-zinc-900">
       <div className="w-3/4 mx-auto">
         <div className="border-2 border-black shadow-lg m-3 p-6 bg-slate-100 rounded-lg">
           <h1 className="text-2xl font-bold pb-1">

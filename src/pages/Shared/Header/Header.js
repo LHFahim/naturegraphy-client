@@ -14,10 +14,10 @@ const Header = () => {
       {user && (
         <>
           <li>
-            <Link to='/myReviews'>My Reviews</Link>
+            <Link to="/myReviews">My Reviews</Link>
           </li>
           <li>
-            <Link to='/addServices'>Add Services</Link>
+            <Link to="/addServices">Add Services</Link>
           </li>
         </>
       )}
@@ -63,7 +63,7 @@ const Header = () => {
       </div>
       <div className="navbar-center">
         <Link to="/" className="btn btn-ghost upper-case lg:text-2xl">
-          Photo Ink
+          NatureGraphy
         </Link>
       </div>
       <div className="navbar-end">

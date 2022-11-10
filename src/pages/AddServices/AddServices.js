@@ -16,16 +16,13 @@ const AddServices = () => {
       price: price,
       about: about,
     };
-    fetch(
-      "https://a11-service-review-server-saifurrahmanbijoy.vercel.app/services",
-      {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify(newService),
-      }
-    )
+    fetch("https://naturegraphy-server.vercel.app/services", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(newService),
+    })
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

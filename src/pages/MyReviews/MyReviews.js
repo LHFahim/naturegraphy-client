@@ -6,9 +6,7 @@ const MyReviews = () => {
   const { user, loading } = useContext(AuthContext);
   const [reviews, setReviews] = useState([]);
   useEffect(() => {
-    fetch(
-      "https://a11-service-review-server-saifurrahmanbijoy.vercel.app/reviews"
-    )
+    fetch("https://naturegraphy-server.vercel.app/reviews")
       .then((res) => res.json())
       .then((data) => {
         const filteredReview = data.filter((d) => d.email === user?.email);
@@ -20,12 +18,9 @@ const MyReviews = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you sure about this?");
     if (proceed) {
-      fetch(
-        `https://a11-service-review-server-saifurrahmanbijoy.vercel.app/reviews/${id}`,
-        {
-          method: "DELETE",
-        }
-      )
+      fetch(`https://naturegraphy-server.vercel.app/reviews/${id}`, {
+        method: "DELETE",
+      })
         .then((res) => res.json())
         .then((data) => {
           console.log(data);

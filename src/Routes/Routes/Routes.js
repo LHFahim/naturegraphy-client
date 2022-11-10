@@ -18,26 +18,18 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () =>
-          fetch(
-            "https://a11-service-review-server-saifurrahmanbijoy.vercel.app/home"
-          ),
+        loader: () => fetch("https://naturegraphy-server.vercel.app/home"),
       },
       {
         path: "/services",
         element: <Services></Services>,
-        loader: () =>
-          fetch(
-            "https://a11-service-review-server-saifurrahmanbijoy.vercel.app/services"
-          ),
+        loader: () => fetch("https://naturegraphy-server.vercel.app/services"),
       },
       {
         path: "/services/:id",
         element: <ServiceById></ServiceById>,
         loader: ({ params }) =>
-          fetch(
-            `https://a11-service-review-server-saifurrahmanbijoy.vercel.app/services/${params.id}`
-          ),
+          fetch(`https://naturegraphy-server.vercel.app/services/${params.id}`),
       },
       {
         path: "/login",
@@ -65,9 +57,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/blogs",
-        element: (
-          <Blog></Blog>
-        ),
+        element: <Blog></Blog>,
       },
     ],
   },

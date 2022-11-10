@@ -5,10 +5,12 @@ const Footer = () => {
   return (
     <footer className="footer justify-around text-center items-center p-4 bg-neutral text-slate-200">
       <div className="items-center grid-flow-col">
-        <p>Copyright ©Reviews N Critiques 2022</p>
+        <p>Copyright © NatureGraphy 2022</p>
       </div>
       <div>
-        <p className="text-orange-400 uppercase text-center">Your opinion matters</p>
+        <p className="text-orange-400 uppercase text-center">
+          Your opinion matters
+        </p>
       </div>
       <div className="grid-flow-col text-center gap-4 md:place-self-center md:justify-self-end">
         <Link>

@@ -17,10 +17,12 @@ const Home = () => {
     <div>
       <Slider></Slider>
       {/* Service section */}
-      <div>
-        <h2 className="text-xl lg:text-3xl bg-green-100 uppercase font-bold border border-gray-500 rounded-2xl text-center py-2 mx-3 lg:mx-20 mt-16 mb-6 shadow-xl">
-          Some of my Available Photography Services
-        </h2>
+      <div className="text-zinc-900">
+        <div className="w-8/12 mx-auto">
+          <h2 className="text-xl text-zinc-600 lg:text-3xl bg-green-100 uppercase font-bold border border-gray-500 rounded-2xl text-center py-2  lg:mx-20 mt-16 mb-6 shadow-xl mx-3 ">
+            Some of my Available Photography Services
+          </h2>
+        </div>
         <div className="lg:w-4/5 mx-auto mb-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
             <ServiceCardHome

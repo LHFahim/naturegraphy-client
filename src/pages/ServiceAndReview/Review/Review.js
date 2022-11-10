@@ -3,9 +3,7 @@ import React, { useEffect, useState } from "react";
 const Review = ({ _id }) => {
   const [reviews, setReviews] = useState([]);
   useEffect(() => {
-    fetch(
-      "https://a11-service-review-server-saifurrahmanbijoy.vercel.app/reviews"
-    )
+    fetch("https://naturegraphy-server.vercel.app/reviews")
       .then((res) => res.json())
       .then((data) => {
         const filteredReview = data.filter((d) => d.service === _id);

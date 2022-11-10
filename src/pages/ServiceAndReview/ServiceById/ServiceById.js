@@ -26,16 +26,13 @@ const ServiceById = () => {
       email,
       review: review,
     };
-    fetch(
-      "https://a11-service-review-server-saifurrahmanbijoy.vercel.app/reviews",
-      {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify(revDetails),
-      }
-    )
+    fetch("https://naturegraphy-server.vercel.app/reviews", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(revDetails),
+    })
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -48,7 +45,7 @@ const ServiceById = () => {
   };
   //   --<
   return (
-    <div>
+    <div className="text-zinc-900">
       <div className="mx-2 mb-20">
         <h2 className="text-2xl lg:text-5xl text-gray-400 text-center my-5 font-extrabold uppercase">
           {title}
